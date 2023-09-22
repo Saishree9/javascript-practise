@@ -71,3 +71,49 @@
 // }
 
 // ?--------------------------------------------------------------------------------------
+// let products=['watch','laptop','mic','keyboard','mouse']
+
+// let m=products.filter((product)=>product.startsWith('m'))
+// console.log(m);
+
+// ?--------------------------------------------------------------------------------------
+
+// let products=['watch','laptop','mic','keyboard','mouse']
+// for(let ele of products){
+//     console.log(ele);
+// }
+
+// ?--------------------------------------------------------------------------------------
+
+// !for each method------------------------
+
+let s=[1,3,5,2,4,6]
+
+// let p=s.forEach(Element=>{
+//     console.log(Element);
+//     return Element * Element
+// })
+
+// * prints only the console statement...but not the return statement 
+
+
+// console.log(p);    //& ---------------undefined
+
+
+// ! -------map method-------------------------
+
+// console.log(s.map(ele=>ele*2));    //&-------(6) [2, 6, 10, 4, 8, 12]
+//* returns the updated array
+
+// console.log(s.map(ele=>ele<3));    //&-------(6) [true, false, false, true, false, false]
+//* returns the updated array
+
+
+
+/*console.log(s.filter(ele => {
+    ele*2
+})); */                              //&------[]
+
+console.log(s.filter(ele => {
+    return ele < 4
+}));                                 //&------(3) [1, 3, 2]
