@@ -1,119 +1,33 @@
-// let products=["mobile","watch","earphones","camera","watch","mobile","laptop"]
-// let s="javascript"
-// console.log(products.join(""));
-
-// ! --------Array.isArray method-----------------
-// console.log(Array.isArray(products));
-
-// console.log(Array.isArray(s));
-
-
-// ! --------Array.from method-----------------
-// let res=Array.from(s)
-// console.log(res);
-
-// console.log(Array.isArray(res));
-
-// ! --------set method-----------------
-
-// let numbers=["3","1","8","32","11","3","7","8","12","9"]
-// console.log(numbers);
-
-// let res1=new Set(numbers)
-// console.log(res1);
-
-// let newArray=Array.from(res1)
-// console.log(newArray.sort((a,b)=>a-b));  //call-back function for ascending order
-
-// ?--------------------------------------------------------------------------------------
-
-// let p="javascript"
-// console.log(p);
-// let newP=p.split("")
-// // console.log(newP);
-// let rev=newP.reverse()
-// // console.log(rev);
-// let newString=rev.join("")
-// console.log(newString);
-
-// ?--------------------------------------------------------------------------------------
-// let numbers=[3,1,8,32,11,3,7,8,12,9]
-
-// let sum=0;
-
-// for (let i in numbers){
-//     sum+=numbers[i]
+// let i;
+// for(i=1; i<=90; i++){
+//     if(i%3===0){
+//         console.log(i);
+//     }
 // }
 
-// console.log(sum);
-
-// ?--------------------------------------------------------------------------------------
-
-// let n = [1,2,3];
-// let r1 = n.reduce((a,b,c,d)=>{
-//     return a+b;
+// let i;
+// for(i=1;1<=90;i++){
+//     if(90%i===0){
+//         console.log(i);
+//     }
 // }
 
-// )
-// console.log(r1);
-// ?--------------------------------------------------------------------------------------
-
-// let numbers=[1,2,3,4]
-
-// console.log(numbers.reduce((a,b,c,d)=>a+b));
-// ?--------------------------------------------------------------------------------------
-
-// let products=["mobile","watch","earphones","camera","watch","mobile","laptop"]
-
-// for(let ele of products){
-//     if(ele[0]!=='m')
-//     console.log(ele);
+// let a = Number(prompt("Enter a number"))
+// console.log(a);
+// if(a>0){
+//     console.log("positive number");
+// }
+// else{
+//     console.log("negative number");
 // }
 
-// ?--------------------------------------------------------------------------------------
-// let products=['watch','laptop','mic','keyboard','mouse']
-
-// let m=products.filter((product)=>product.startsWith('m'))
-// console.log(m);
-
-// ?--------------------------------------------------------------------------------------
-
-// let products=['watch','laptop','mic','keyboard','mouse']
-// for(let ele of products){
-//     console.log(ele);
+// let n=1;
+// for(i=1;i<=9;i++)
+// {
+//     n*=i;
 // }
-
-// ?--------------------------------------------------------------------------------------
-
-// !for each method------------------------
-
-let s=[1,3,5,2,4,6]
-
-// let p=s.forEach(Element=>{
-//     console.log(Element);
-//     return Element * Element
-// })
-
-// * prints only the console statement...but not the return statement 
+// console.log(n);
 
 
-// console.log(p);    //& ---------------undefined
+//*------------------------------------------
 
-
-// ! -------map method-------------------------
-
-// console.log(s.map(ele=>ele*2));    //&-------(6) [2, 6, 10, 4, 8, 12]
-//* returns the updated array
-
-// console.log(s.map(ele=>ele<3));    //&-------(6) [true, false, false, true, false, false]
-//* returns the updated array
-
-
-
-/*console.log(s.filter(ele => {
-    ele*2
-})); */                              //&------[]
-
-console.log(s.filter(ele => {
-    return ele < 4
-}));                                 //&------(3) [1, 3, 2]
