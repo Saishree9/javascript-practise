@@ -87,7 +87,7 @@
 
 // !for each method------------------------
 
-let s=[1,3,5,2,4,6]
+// let s=[1,3,5,2,4,6]
 
 // let p=s.forEach(Element=>{
 //     console.log(Element);
@@ -114,6 +114,49 @@ let s=[1,3,5,2,4,6]
     ele*2
 })); */                              //&------[]
 
-console.log(s.filter(ele => {
-    return ele < 4
-}));                                 //&------(3) [1, 3, 2]
+// console.log(s.filter(ele => {
+//     return ele < 4
+// }));                              //&------(3) [1, 3, 2]
+
+
+// let a=[2,69,90,30,23,70,45];
+// console.log(a.filter((ele=>ele%10==0)));   //&---------------(3) [1, 3, 2]
+
+// console.log(a.map((ele=>ele*ele)));    //&---------------(7) [4, 4761, 8100, 900, 529, 4900, 2025]
+
+
+// ?--------------------------------------------------------------------------------------
+
+let students=[
+    {
+        sname:"ram",
+        age:18,
+        dept:"cse"
+    },
+    {
+        sname:"raj",
+        age:20,
+        dept:"ise"
+    },
+    {
+        sname:"john",
+        age:19,
+        dept:"civil"
+    },
+    {
+        sname:"ravi",
+        age:21,
+        dept:"civil"
+    }
+]
+
+
+console.log(students.filter((student=>student.dept=="cse")));
+
+
+let u=students.map((student)=>student.sname.toUpperCase())
+console.log(u);
+
+console.log(students.filter((student)=>student.age<20));
+
+console.log(students.filter((student)=>student.dept!="civil"));
